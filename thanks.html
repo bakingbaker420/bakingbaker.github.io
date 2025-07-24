@@ -1,0 +1,58 @@
+<!-- File: thanks.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Thank You!</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
+    body {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      background: #0d9488;
+      color: #ffffff;
+      font-family: 'Inter', sans-serif;
+      overflow: hidden;
+      text-align: center;
+      padding: 2rem;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      animation: popUp 1s ease-out forwards;
+      transform: scale(0.5);
+      opacity: 0;
+    }
+
+    @keyframes popUp {
+      60% {
+        transform: scale(1.1);
+        opacity: 1;
+      }
+      100% {
+        transform: scale(1);
+        opacity: 1;
+      }
+    }
+
+    a {
+      display: inline-block;
+      margin-top: 1.5rem;
+      color: #ffffff;
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <div>
+    <h1>Thank you! 🎉</h1>
+    <p>Your message is on its way. We'll get back to you soon.</p>
+    <p><a href="index.html">← Back to Support Page</a></p>
+  </div>
+</body>
+</html>
+

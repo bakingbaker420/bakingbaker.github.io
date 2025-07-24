@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FAQ • App Support</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
+        body {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          min-height: 100vh;
+          background: #0d9488;
+          color: #ffffff;
+          font-family: 'Inter', sans-serif;
+          overflow: hidden;
+          text-align: center;
+          padding: 2rem;
+        }
+
+        h1 {
+          font-size: 2.5rem;
+          animation: popUp 1s ease-out forwards;
+          transform: scale(0.5);
+          opacity: 0;
+        }
+
+        @keyframes popUp {
+          60% {
+            transform: scale(1.1);
+            opacity: 1;
+          }
+          100% {
+            transform: scale(1);
+            opacity: 1;
+          }
+        }
+
+        .faq {
+          max-width: 700px;
+          width: 100%;
+          display: grid;
+          gap: 1rem;
+        }
+
+        details {
+          background: rgba(255, 255, 255, 0.1);
+          border-radius: 0.75rem;
+          box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+          padding: 1rem 1.25rem;
+          transition: all 0.3s ease;
+        }
+
+        details[open] {
+          background: rgba(255, 255, 255, 0.2);
+          box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+        }
+
+        summary {
+          font-weight: 600;
+          cursor: pointer;
+        }
+
+        summary::marker {
+          color: #ffffff;
+          font-size: 1.25rem;
+        }
+
+        p {
+          margin-top: 0.75rem;
+          line-height: 1.6;
+        }
+
+        a {
+          display: inline-block;
+          margin-top: 1.5rem;
+          color: #ffffff;
+          text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+<div>
+    <h1>Frequently Asked Questions</h1>
+    <section class="faq">
+        <details>
+            <summary>How do I report a bug?</summary>
+            <p>
+                Use the contact form on the <a href="index.html">support page</a> or open an
+                issue on our <a href="https://github.com/bakingbaker420/">GitHub repository</a>.
+            </p>
+        </details>
+        <details>
+            <summary>What is the expected response time?</summary>
+            <p>We aim to respond within 48&nbsp;hours on business days.</p>
+        </details>
+        <details>
+            <summary>Where can I find the privacy policy?</summary>
+            <p>
+                The privacy&nbsp;policy is located on our <a href="index.html">support page</a>.
+            </p>
+        </details>
+    </section>
+    <p><a href="index.html">← Back to Support Page</a></p>
+</div>
+</body>
+</html>
